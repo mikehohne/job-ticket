@@ -1,0 +1,58 @@
+﻿@model job_ticket.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.productID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imageURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imageURL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hasTemplate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hasTemplate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stockQuantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stockQuantity)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
